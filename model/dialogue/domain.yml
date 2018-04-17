@@ -1,0 +1,35 @@
+action_factory: null
+actions:
+- utter_greet
+- utter_ask_user_info
+- utter_ask_car_type
+- utter_provide_info
+config:
+  store_entities_as_slots: true
+entities:
+- car
+- car_type
+- mobile
+intents:
+- greet
+- battery_search
+- user_detail
+- selection_car_type
+slots:
+  car:
+    type: text
+  car_type:
+    type: text
+  mobile:
+    type: text
+templates:
+  utter_ask_car_type:
+  - text: Is your car petrol or diesel
+  utter_ask_user_info:
+  - text: Let me check. Can you provide your name, contact, location & pin code
+  - text: Sure. please provide your name, contact number, location & pin code
+  utter_greet:
+  - text: hi! Welcome to BatteryBoss! How can I help?
+  utter_provide_info:
+  - text: 'Following options are available: Exide 4500, Amaron 4200'
+topics: []

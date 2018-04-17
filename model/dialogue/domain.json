@@ -1,0 +1,20 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_battery_search",
+    "intent_user_detail",
+    "intent_selection_car_type",
+    "entity_car",
+    "entity_car_type",
+    "entity_mobile",
+    "slot_car_0",
+    "slot_car_type_0",
+    "slot_mobile_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_ask_user_info",
+    "prev_utter_ask_car_type",
+    "prev_utter_provide_info"
+  ]
+}

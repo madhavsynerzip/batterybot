@@ -1,0 +1,945 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 41,
+            "value": "Hyndai i10 sportz",
+            "entity": "car"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "value": "2013",
+            "entity": "model_year"
+          }
+        ],
+        "text": "My car battery is dead. Hyndai i10 sportz. 2013 model. How much will it cost to get it replaced."
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "Duster",
+            "entity": "car"
+          }
+        ],
+        "text": "How much for Duster battery?"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 56,
+            "value": "chevrolet Enjoy",
+            "entity": "car"
+          }
+        ],
+        "text": "can you give me an quote for battery for chevrolet Enjoy"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 38,
+            "end": 61,
+            "value": "honda amaze petrol 12.l",
+            "entity": "car"
+          },
+          {
+            "start": 50,
+            "end": 56,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "need to know the battery required for honda amaze petrol 12.l"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "SX4 Maruti",
+            "entity": "car"
+          }
+        ],
+        "text": "Hi I am looking for SX4 Maruti battery"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "SANTRO",
+            "entity": "car"
+          }
+        ],
+        "text": "WANTED A BATTERY FOR MY SANTRO CAR IN PUNE"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "Maruti Alto k10",
+            "entity": "car"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "value": "CNG",
+            "entity": "car_type"
+          }
+        ],
+        "text": "I need car battery for Maruti Alto k10 CNG model"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 38,
+            "end": 53,
+            "value": "Hyundai i10 1.2",
+            "entity": "car"
+          },
+          {
+            "start": 54,
+            "end": 60,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "can you please help with a batter for Hyundai i10 1.2 petrol?"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "exide",
+            "entity": "battery"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "verna",
+            "entity": "car"
+          }
+        ],
+        "text": "looking for exide battery for verna car"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 45,
+            "value": "Maruthi Suzuki Swift",
+            "entity": "car"
+          },
+          {
+            "start": 56,
+            "end": 60,
+            "value": "2013",
+            "entity": "model_year"
+          },
+          {
+            "start": 62,
+            "end": 68,
+            "value": "Diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "I am looking battery for Maruthi Suzuki Swift New model 2013, Diesel"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "santro",
+            "entity": "car"
+          }
+        ],
+        "text": "Battery for santro Price"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Wagon r",
+            "entity": "car"
+          }
+        ],
+        "text": "Wagon r best battery price"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello rohit"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "is some there?"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "r u there?"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "kumar",
+            "entity": "name"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "bangalore",
+            "entity": "city"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "value": "9663744735",
+            "entity": "mobile"
+          }
+        ],
+        "text": "kumar bangalore 9663744735"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "Gurwindar Singh",
+            "entity": "name"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "value": "Thane West",
+            "entity": "city"
+          }
+        ],
+        "text": "Gurwindar Singh Thane West"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Anurag Ahuja",
+            "entity": "name"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "value": "Bangalore",
+            "entity": "city"
+          },
+          {
+            "start": 27,
+            "end": 37,
+            "value": "9945000397",
+            "entity": "mobile"
+          }
+        ],
+        "text": "Anurag Ahuja Bangalore and 9945000397"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "DIVA",
+            "entity": "name"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "value": "THANE",
+            "entity": "city"
+          }
+        ],
+        "text": "DIVA THANE"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "pune",
+            "entity": "city"
+          }
+        ],
+        "text": "I am from pune"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Tushar",
+            "entity": "name"
+          },
+          {
+            "start": 7,
+            "end": 16,
+            "value": "Hyderabad",
+            "entity": "city"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "500042",
+            "entity": "pincode"
+          }
+        ],
+        "text": "Tushar Hyderabad 500042"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "chennai",
+            "entity": "city"
+          }
+        ],
+        "text": "I am in north chennai"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Kadugodi",
+            "entity": "city"
+          }
+        ],
+        "text": "Kadugodi Near flyover"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "KOLKATA",
+            "entity": "city"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "700094",
+            "entity": "pincode"
+          }
+        ],
+        "text": "BAISHNABGHATA PATULI TOWNSHIP, KOLKATA-700094, WEST BENGAL"
+      },
+      {
+        "intent": "user_detail",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "+919831793810",
+            "entity": "mobile"
+          }
+        ],
+        "text": "+919831793810"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "petrol"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "diesel"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "my car is petrol"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "it's diesel car"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "diesel model"
+      },
+      {
+        "intent": "selection_car_type",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "it's a petrol car"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "wagonr",
+            "entity": "car"
+          }
+        ],
+        "text": "Battery fr wagonr fr 18 months"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 44,
+            "end": 48,
+            "value": "Alto",
+            "entity": "car"
+          }
+        ],
+        "text": "what is the price of exide 35AH battery for Alto"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "WAGON R ",
+            "entity": "car"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "PETROL",
+            "entity": "car_type"
+          }
+        ],
+        "text": "I NEED A BATTERY FOR WAGON R PETROL VERSION. PLS SUGGEST"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [],
+        "text": "i need battery for my car"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "Hyundai I 20 Elite asta",
+            "entity": "car"
+          }
+        ],
+        "text": "Hyundai I 20 Elite asta Battery"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "value": "Maruti Esteem",
+            "entity": "car"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "looking for battery for Maruti Esteem petrol"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 36,
+            "value": "honda city",
+            "entity": "car"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "My car battery down Model honda city diesel"
+      },
+      {
+        "intent": "battery_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "i10",
+            "entity": "car"
+          }
+        ],
+        "text": "Hi. I am looking for i10 car battery"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "Hyndai i10 sportz",
+            "entity": "car"
+          }
+        ],
+        "text": "Hyndai i10 sportz. 2013 model"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Duster",
+            "entity": "car"
+          }
+        ],
+        "text": "Duster"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "Renault Duster",
+            "entity": "car"
+          }
+        ],
+        "text": "Renault Duster"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "chevrolet Enjoy.",
+            "entity": "car"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "my car is chevrolet Enjoy. petrol model"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "honda amaze petrol 12.l",
+            "entity": "car"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "honda amaze petrol 12.l"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Maruti SX4",
+            "entity": "car"
+          }
+        ],
+        "text": "Maruti SX4"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "suzuki sx4",
+            "entity": "car"
+          }
+        ],
+        "text": "suzuki sx4"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "maruti suzuki SX4",
+            "entity": "car"
+          }
+        ],
+        "text": "maruti suzuki SX4"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "SANTRO",
+            "entity": "car"
+          }
+        ],
+        "text": "SANTRO"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "Hyundai santro",
+            "entity": "car"
+          }
+        ],
+        "text": "Hyundai santro"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "Maruti Alto k10",
+            "entity": "car"
+          }
+        ],
+        "text": "Maruti Alto k10"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Alto k10",
+            "entity": "car"
+          }
+        ],
+        "text": "Alto k10"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "Maruti Alto k10",
+            "entity": "car"
+          }
+        ],
+        "text": "I have Maruti Alto k10"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 10,
+            "end": 32,
+            "value": "Hyundai i10 1.2 petrol",
+            "entity": "car"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "my car is Hyundai i10 1.2 petrol"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "hyundai verna",
+            "entity": "car"
+          }
+        ],
+        "text": "hyundai verna"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "verna",
+            "entity": "car"
+          }
+        ],
+        "text": "verna"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Wagon r",
+            "entity": "car"
+          }
+        ],
+        "text": "car is Wagon r"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "maruti wagon r",
+            "entity": "car"
+          }
+        ],
+        "text": "maruti wagon r"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "Hyundai I 20 Elite asta",
+            "entity": "car"
+          }
+        ],
+        "text": "Hyundai I 20 Elite asta"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "i10",
+            "entity": "car"
+          }
+        ],
+        "text": "i10"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "mahindra scorpio",
+            "entity": "car"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "mahindra scorpio diesel"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "toyota innova",
+            "entity": "car"
+          }
+        ],
+        "text": "toyota innova"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "tata nano",
+            "entity": "car"
+          }
+        ],
+        "text": "I have tata nano car"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "mahindra bolero",
+            "entity": "car"
+          }
+        ],
+        "text": "mahindra bolero"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "toyota liva",
+            "entity": "car"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "value": "petrol",
+            "entity": "car_type"
+          }
+        ],
+        "text": "toyota liva petrol"
+      },
+      {
+        "intent": "car_details",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "tata indigo",
+            "entity": "car"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "value": "diesel",
+            "entity": "car_type"
+          }
+        ],
+        "text": "car is tata indigo diesel"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "pincode",
+        "pattern": "[0-9]{6}"
+      },
+      {
+        "name": "model_year",
+        "pattern": "[0-9]{4}"
+      },
+      {
+        "name": "mobile",
+        "pattern": "[0-9]{10}"
+      },
+      {
+        "name": "mobile",
+        "pattern": "\\d{2}(\\s*)\\d{10}"
+      },
+      {
+        "name": "car_type",
+        "pattern": "petrol|diesel"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}
