@@ -88,8 +88,8 @@
 * _car_details[car_type=PETROL]
     - slot{"car_type": "PETROL"}
     - utter_ask_user_info
-* _user_detail[mobile=8888815255]
-    - slot{"mobile": "8888815255"}
+* _user_detail[mobile=8899915255]
+    - slot{"mobile": "8899915255"}
     - action_provide_battery_options
 
 ## Generated Story 7220021886014147514
