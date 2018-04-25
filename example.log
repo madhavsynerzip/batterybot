@@ -321,3 +321,411 @@ DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be fo
 DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
 DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
 DEBUG:rasa_core.processor:Current topic: None
+DEBUG:pip.vcs:Registered VCS backend: git
+DEBUG:pip.vcs:Registered VCS backend: hg
+DEBUG:pip.vcs:Registered VCS backend: svn
+DEBUG:pip.vcs:Registered VCS backend: bzr
+INFO:rasa_nlu.components:Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+DEBUG:rasa_core.tracker_store:Creating a new tracker for id 'default'.
+DEBUG:rasa_core.processor:Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.92175478585362869}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 2 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '2'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #2 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: hi! Welcome to BatteryBoss! How can I help?, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_greet' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '0'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'can you get me battery for my car mahindra xuv' with intent '{'name': 'battery_search', 'confidence': 0.89811517257996387}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 6 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #3 with prob 0.52.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Please provide your name & contact number, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_user_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_user_info', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'Madhav 9810784182' with intent '{'name': 'user_detail', 'confidence': 0.89598479112891449}' and entities  '[{'start': 0, 'end': 6, 'value': 'Madhav', 'entity': 'city', 'extractor': 'ner_crf'}, {'start': 7, 'end': 17, 'value': '9810784182', 'entity': 'mobile', 'extractor': 'ner_crf'}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 11 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #4 with prob 0.87.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Is your car petrol or diesel, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_car_type' ended with events '[]'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'petrol' with intent '{'name': 'car_details', 'confidence': 0.60388890164429232}' and entities  '[{'start': 0, 'end': 6, 'value': 'PETROL', 'entity': 'car_type', 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 16 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: PETROL
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #7 with prob 0.83.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Following options are available in Petrol Variant: Exide 4250, Amaron 3900, data: null)'
+DEBUG:rasa_core.processor:Action 'action_provide_battery_options' ended with events '['AllSlotsReset()']'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('prev_action_provide_battery_options', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'hi' with intent '{'name': 'greet', 'confidence': 0.92175478585362869}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 21 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('prev_action_provide_battery_options', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #2 with prob 0.97.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: hi! Welcome to BatteryBoss! How can I help?, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_greet' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car_type', 1), ('prev_action_provide_battery_options', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'give me quotation for hyundai grand i10' with intent '{'name': 'battery_search', 'confidence': 0.48280027823681454}' and entities  '[{'start': 22, 'end': 39, 'value': 'hyundai grand i10', 'entity': 'car', 'extractor': 'ner_crf'}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 26 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: hyundai grand i10
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '3'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #3 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Let me check. Can you provide your name & contact number, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_user_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_utter_ask_user_info', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '0'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message '9810784182, Suresh' with intent '{'name': 'user_detail', 'confidence': 0.86743133169584208}' and entities  '[{'start': 0, 'end': 10, 'value': '9810784182', 'entity': 'mobile', 'extractor': 'ner_crf'}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 31 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: hyundai grand i10
+	car_type: None
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '4'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #4 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Is your car petrol or diesel, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_car_type' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('entity_car', 1), ('slot_car_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '0'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'diesel' with intent '{'name': 'car_details', 'confidence': 0.60388890164429232}' and entities  '[{'start': 0, 'end': 6, 'value': 'Diesel', 'entity': 'car_type', 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 36 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: hyundai grand i10
+	car_type: Diesel
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #7 with prob 0.84.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Following options are available in Petrol Variant: Exide 4250, Amaron 3900, data: null)'
+DEBUG:rasa_core.processor:Action 'action_provide_battery_options' ended with events '['AllSlotsReset()']'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_mobile_0', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('prev_action_provide_battery_options', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:pip.vcs:Registered VCS backend: git
+DEBUG:pip.vcs:Registered VCS backend: hg
+DEBUG:pip.vcs:Registered VCS backend: svn
+DEBUG:pip.vcs:Registered VCS backend: bzr
+INFO:rasa_nlu.components:Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+DEBUG:rasa_core.tracker_store:Creating a new tracker for id 'default'.
+DEBUG:rasa_core.processor:Received user message 'hola' with intent '{'name': 'car_details', 'confidence': 0.78096906380795417}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 2 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	None
+	[('intent_car_details', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #3 with prob 0.44.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Let me check. Can you provide your name & contact number, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_user_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	[('intent_car_details', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('prev_utter_ask_user_info', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:pip.vcs:Registered VCS backend: git
+DEBUG:pip.vcs:Registered VCS backend: hg
+DEBUG:pip.vcs:Registered VCS backend: svn
+DEBUG:pip.vcs:Registered VCS backend: bzr
+INFO:rasa_nlu.components:Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+DEBUG:rasa_core.tracker_store:Creating a new tracker for id 'default'.
+DEBUG:rasa_core.processor:Received user message 'i need to change battery for my car' with intent '{'name': 'battery_search', 'confidence': 0.94652930034134442}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 2 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	None
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '6'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #6 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Please provide you car details, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_car_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	None
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '0'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'mahindra xuv 500' with intent '{'name': 'car_details', 'confidence': 0.74064246047587923}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 6 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]
+	[('intent_car_details', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #4 with prob 0.97.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Is your car petrol or diesel, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_car_type' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]
+	[('intent_car_details', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('prev_utter_ask_car_type', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'diesel' with intent '{'name': 'car_details', 'confidence': 0.60388890164429232}' and entities  '[{'start': 0, 'end': 6, 'value': 'Diesel', 'entity': 'car_type', 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 11 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: Diesel
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #3 with prob 0.93.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Please provide your name & contact number, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_user_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('prev_utter_ask_car_type', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]]
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'Madhav 9810784182' with intent '{'name': 'user_detail', 'confidence': 0.89598479112891449}' and entities  '[{'start': 0, 'end': 6, 'value': 'Madhav', 'entity': 'city', 'extractor': 'ner_crf'}, {'start': 7, 'end': 17, 'value': '9810784182', 'entity': 'mobile', 'extractor': 'ner_crf'}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 16 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: Diesel
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #7 with prob 0.99.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Following options are available in Diesel Variant: Exide 4500, Amaron 4200, data: null)'
+DEBUG:rasa_core.processor:Action 'action_provide_battery_options' ended with events '['AllSlotsReset()']'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car_type', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('prev_action_provide_battery_options', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'can you help me in changing my car battery' with intent '{'name': 'battery_search', 'confidence': 0.90479971613307231}' and entities  '[]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 21 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: None
+	car_type: None
+	mobile: None
+	name: None
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('prev_action_provide_battery_options', 1)]
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #6 with prob 0.85.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: You are looking for which car?, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_car_info' ended with events '[]'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('prev_action_provide_battery_options', 1)]
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'hyundai grand i10 petrol version' with intent '{'name': 'car_details', 'confidence': 0.60676740626110526}' and entities  '[{'start': 0, 'end': 17, 'value': 'hyundai grand i10', 'entity': 'car', 'extractor': 'ner_crf'}, {'start': 18, 'end': 24, 'value': 'PETROL', 'entity': 'car_type', 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 27 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: hyundai grand i10
+	car_type: PETROL
+	mobile: None
+	name: None
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_action_listen', 1)]
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '3'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #3 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Let me check. Can you provide your name & contact number, data: null)'
+DEBUG:rasa_core.processor:Action 'utter_ask_user_info' ended with events '[]'
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_battery_search', 1), ('prev_utter_ask_car_info', 1)]
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '0'
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None
+DEBUG:rasa_core.tracker_store:Recreating tracker for id 'default'
+DEBUG:rasa_core.processor:Received user message 'Madhav 9810784182' with intent '{'name': 'user_detail', 'confidence': 0.89598479112891449}' and entities  '[{'start': 0, 'end': 6, 'value': 'Madhav', 'entity': 'city', 'extractor': 'ner_crf'}, {'start': 7, 'end': 17, 'value': '9810784182', 'entity': 'mobile', 'extractor': 'ner_crf'}]'
+DEBUG:rasa_core.processor:Logged UserUtterance - tracker now has 32 events
+DEBUG:rasa_core.processor:Current slot values: 
+	car: hyundai grand i10
+	car_type: PETROL
+	mobile: 9810784182
+	name: None
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_action_listen', 1)]
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]]
+DEBUG:rasa_core.policies.memoization:Used memorised next action '7'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #7 with prob 1.00.
+DEBUG:rasa_core.processor:Bot utterance 'BotUttered(text: Following options are available in Petrol Variant: Exide 4250, Amaron 3900, data: null)'
+DEBUG:rasa_core.processor:Action 'action_provide_battery_options' ended with events '['AllSlotsReset()']'
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.memoization:Current tracker state [
+	[('intent_car_details', 1), ('entity_car', 1), ('entity_car_type', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('prev_utter_ask_user_info', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('slot_car_0', 1), ('slot_car_type_0', 1), ('slot_mobile_0', 1), ('prev_action_listen', 1)]
+	[('intent_user_detail', 1), ('entity_mobile', 1), ('prev_action_provide_battery_options', 1)]]
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.featurizers:Feature 'entity_city' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+DEBUG:rasa_core.policies.ensemble:Predicted next action #0 with prob 1.00.
+DEBUG:rasa_core.processor:Action 'action_listen' ended with events '[]'
+DEBUG:rasa_core.processor:Current topic: None

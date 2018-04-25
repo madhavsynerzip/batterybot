@@ -1,0 +1,30 @@
+[
+    {
+        "name": "pincode",
+        "pattern": "[0-9]{6}"
+    },
+    {
+        "name": "model_year",
+        "pattern": "[0-9]{4}"
+    },
+    {
+        "name": "mobile",
+        "pattern": "[0-9]{10}"
+    },
+    {
+        "name": "mobile",
+        "pattern": "\\d{2}(\\s*)\\d{10}"
+    },
+    {
+        "name": "car_type",
+        "pattern": "petrol|diesel"
+    },
+    {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+    },
+    {
+        "name": "car_make",
+        "pattern": "hyundai|toyota|mahindra|mercedes|bmw|audi|maruti|suzuki|tata|chevorlet|ford|renault|honda"
+    }
+]

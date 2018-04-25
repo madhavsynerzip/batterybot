@@ -14,7 +14,7 @@ class ActionProvideBatteryOption(Action):
 
     def run(self, dispatcher, tracker, domain):
         car_type = tracker.get_slot("car_type")
-        if car_type == "diesel":
+        if car_type.lower() == "diesel":
             dispatcher.utter_message("Following options are available in Diesel Variant: Exide 4500, Amaron 4200")
         else:
             dispatcher.utter_message("Following options are available in Petrol Variant: Exide 4250, Amaron 3900")
